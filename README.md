@@ -58,3 +58,5 @@ estructura del programa se mantiene como se entregó.
 ## Autor
 
 Michael Lata ([@Whiteherobot](https://github.com/Whiteherobot))
+
+Licencia MIT.
