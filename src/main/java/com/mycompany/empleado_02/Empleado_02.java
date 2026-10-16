@@ -17,25 +17,20 @@ public class Empleado_02 {
          int calcularIngresos;
 
         public int calcularImpuesto(){
-        var retorno= 0;
-        if(this.sueldo> 0 && this.sueldo< 100){
+        var retorno= 0.0;
+        if(this.sueldo< 500){
             retorno= 0;
-            
         }else{
-            if(this.sueldo>=500 && this.sueldo <=1000){
-                retorno= (int) (0.05*horasTrabajadas);
-                
+            if(this.sueldo <=1000){
+                retorno= 0.05*this.sueldo;
             }else{
-                if(this.sueldo>= 1000 && this.sueldo <= 2000 ){
-                    retorno= (int)0.12*horasTrabajadas;
-                   
+                if(this.sueldo <= 2000 ){
+                    retorno= 0.12*this.sueldo;
                 }else{
-                   retorno= (int) 0.25*horasTrabajadas;
-                   
+                   retorno= 0.25*this.sueldo;
                 }
             }
         }
         return (int) retorno;
     }
-     
 }
